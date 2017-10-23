@@ -20,7 +20,7 @@ def plot_dirSpec(dirSpec, freq, directions=None, vmin=0,filename=None):
     fig, ax = plt.subplots(figsize=(10,10),subplot_kw=dict(projection='polar'))
     cmap = cm.jet
     cmap.set_under(color='white')
-    cs = ax.contourf(dd,ff,dirSpec,30,vmin=vmin)
+    cs = ax.contourf(dd,ff,dirSpec,30,vmin=vmin, cmap=cmap)
     ax.set_rmax(.28)
     ax.set_theta_offset(np.pi/2)
     ax.set_theta_direction(-1)
