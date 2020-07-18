@@ -38,11 +38,8 @@ def plot_dirSpec(dirSpec, freq, directions=None, vmin=0,filename=None):
     cbar.set_label('Energy Density [m$^2$/Hz/rad]',fontsize=14, labelpad =14)
 
     if filename:
-        print 'saving figure on %s' %filename
+        print('saving figure on %s' %filename)
         plt.savefig(filename, dpi=150)
     plt.show()
 
     return
-
-
-
